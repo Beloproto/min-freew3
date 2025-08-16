@@ -15,26 +15,26 @@ export function TeamPage() {
   const founders = [
     {
       name: "Ayémou Loïc-Yvan",
-      role: "Founder & CEO",
-      bio: "Blockchain Project Manager. +10 Ans en Communication & Développement des Marques",
+      role: "Fondateur & PDG",
+      bio: "Chef de Projet Blockchain. +10 ans en Communication & Développement des Marques",
       image: "team founder blockchain",
-      achievements: ["Operations Manager at Binance", "Country Manager Izichange", "Développeur Smart Contract RUST"],
+      achievements: ["Responsable Opérations chez Binance", "Country Manager Izichange", "Développeur Smart Contract RUST"],
       social: { twitter: "#", linkedin: "#", github: "#" }
     },
     {
       name: "Marie Rodriguez",
-      role: "Co-Founder & CTO",
-      bio: "Previously Principal Engineer at Polygon. Expert in Layer 2 scaling solutions and ZK proofs. MIT PhD in Cryptography.",
+      role: "Co-Fondatrice & Directrice Technique",
+      bio: "Anciennement Ingénieure Principale chez Polygon. Experte en solutions de mise à l'échelle Layer 2 et preuves ZK. Doctorat MIT en Cryptographie.",
       image: "team woman engineer blockchain",
-      achievements: ["Polygon core team", "20+ research papers", "ZK-SNARK pioneer"],
+      achievements: ["Équipe principale Polygon", "20+ publications de recherche", "Pionnière ZK-SNARK"],
       social: { twitter: "#", linkedin: "#", github: "#" }
     },
     {
       name: "James Park",
-      role: "Co-Founder & Head of Programs",
-      bio: "Former Y Combinator Partner. Mentored 50+ Web3 startups. Berkeley MBA with deep network in crypto VC ecosystem.",
+      role: "Co-Fondateur & Directeur des Programmes",
+      bio: "Ancien Partenaire Y Combinator. A mentoré 50+ startups Web3. MBA Berkeley avec un réseau approfondi dans l'écosystème crypto VC.",
       image: "team mentor business",
-      achievements: ["Y Combinator Partner", "50+ startups mentored", "$500M+ raised"],
+      achievements: ["Partenaire Y Combinator", "50+ startups mentorées", "$500M+ levés"],
       social: { twitter: "#", linkedin: "#" }
     }
   ];
@@ -42,44 +42,44 @@ export function TeamPage() {
   const mentors = [
     {
       name: "Vitalik Buterin",
-      role: "Special Advisor",
+      role: "Conseiller Spécial",
       company: "Ethereum Foundation",
-      expertise: ["Protocol Design", "Consensus Mechanisms"],
+      expertise: ["Conception de Protocoles", "Mécanismes de Consensus"],
       image: "vitalik buterin ethereum"
     },
     {
       name: "Stani Kulechov",
-      role: "DeFi Mentor",
+      role: "Mentor DeFi",
       company: "Aave",
-      expertise: ["Lending Protocols", "Governance"],
+      expertise: ["Protocoles de Prêt", "Gouvernance"],
       image: "team defi expert"
     },
     {
       name: "Sandeep Nailwal",
-      role: "Infrastructure Mentor",
+      role: "Mentor Infrastructure",
       company: "Polygon",
-      expertise: ["Layer 2", "Scaling Solutions"],
+      expertise: ["Layer 2", "Solutions de Mise à l'Échelle"],
       image: "team infrastructure expert"
     },
     {
       name: "Linda Xie",
-      role: "Investment Mentor",
+      role: "Mentor Investissement",
       company: "Scalar Capital",
-      expertise: ["Tokenomics", "VC Strategy"],
+      expertise: ["Tokenomics", "Stratégie VC"],
       image: "team investment expert"
     },
     {
       name: "Balaji Srinivasan",
-      role: "Strategy Advisor",
-      company: "Former CTO Coinbase",
-      expertise: ["Product Strategy", "Network States"],
+      role: "Conseiller Stratégie",
+      company: "Ancien CTO Coinbase",
+      expertise: ["Stratégie Produit", "États-Réseaux"],
       image: "team strategy advisor"
     },
     {
       name: "Meltem Demirors",
-      role: "Industry Advisor",
+      role: "Conseillère Industrie",
       company: "CoinShares",
-      expertise: ["Digital Assets", "Regulatory"],
+      expertise: ["Actifs Numériques", "Réglementaire"],
       image: "team regulatory expert"
     }
   ];
@@ -87,31 +87,31 @@ export function TeamPage() {
   const team = [
     {
       name: "Sarah Kim",
-      role: "Lead Instructor - DeFi",
-      bio: "Former Compound core developer. Built automated market makers and lending protocols.",
+      role: "Instructrice Principale - DeFi",
+      bio: "Ancienne développeuse principale chez Compound. A construit des teneurs de marché automatisés et des protocoles de prêt.",
       image: "team instructor defi",
-      expertise: ["Smart Contracts", "AMM Design", "Risk Management"]
+      expertise: ["Smart Contracts", "Conception AMM", "Gestion des Risques"]
     },
     {
       name: "Marcus Thompson",
-      role: "Lead Instructor - Gaming",
-      bio: "Ex-Unity blockchain lead. Shipped 10+ Web3 games with millions of players.",
+      role: "Instructeur Principal - Gaming",
+      bio: "Ex-responsable blockchain Unity. A livré 10+ jeux Web3 avec des millions de joueurs.",
       image: "team instructor gaming",
-      expertise: ["Game Development", "NFT Integration", "Player Economics"]
+      expertise: ["Développement de Jeux", "Intégration NFT", "Économie des Joueurs"]
     },
     {
       name: "Priya Patel",
-      role: "Lead Instructor - Infrastructure",
-      bio: "Former Google Cloud engineer. Specialized in blockchain infrastructure and DevOps.",
+      role: "Instructrice Principale - Infrastructure",
+      bio: "Ancienne ingénieure Google Cloud. Spécialisée en infrastructure blockchain et DevOps.",
       image: "team instructor infrastructure",
-      expertise: ["Node Operations", "Cloud Architecture", "CI/CD"]
+      expertise: ["Opérations de Nœuds", "Architecture Cloud", "CI/CD"]
     },
     {
       name: "David Martinez",
-      role: "Career Services Director",
-      bio: "15 years in tech recruiting. Placed 200+ engineers at top Web3 companies.",
+      role: "Directeur des Services Carrière",
+      bio: "15 ans dans le recrutement tech. A placé 200+ ingénieurs dans les meilleures entreprises Web3.",
       image: "team career services",
-      expertise: ["Technical Recruiting", "Salary Negotiation", "Interview Prep"]
+      expertise: ["Recrutement Technique", "Négociation Salariale", "Préparation Entretiens"]
     }
   ];
 
@@ -126,19 +126,19 @@ export function TeamPage() {
             className="mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
+            Retour à l'Accueil
           </Button>
           
           <div className="text-center max-w-4xl mx-auto">
             <Badge variant="secondary" className="mb-4">
-              👥 Meet the Team
+              👥 Rencontrez l'Équipe
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6">
-              L'Équipe Behind Your Success
+              L'Équipe Derrière Votre Succès
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              Learn from industry pioneers, protocol creators, and successful entrepreneurs 
-              who've built the Web3 ecosystem you'll be joining.
+              Apprenez auprès des pionniers de l'industrie, des créateurs de protocoles et des entrepreneurs à succès 
+              qui ont construit l'écosystème Web3 que vous allez rejoindre.
             </p>
           </div>
         </div>
@@ -148,9 +148,9 @@ export function TeamPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4">Founders</h2>
+            <h2 className="text-3xl md:text-4xl mb-4">Fondateurs</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Serial entrepreneurs and technical leaders who've built billion-dollar protocols
+              Entrepreneurs en série et leaders techniques qui ont créé des protocoles de plusieurs milliards de dollars
             </p>
           </div>
           
@@ -177,7 +177,7 @@ export function TeamPage() {
                   </p>
                   
                   <div className="space-y-2">
-                    <h4 className="font-medium text-sm">Key Achievements:</h4>
+                    <h4 className="font-medium text-sm">Réalisations Clés :</h4>
                     {founder.achievements.map((achievement, achIndex) => (
                       <Badge key={achIndex} variant="secondary" className="text-xs mr-1 mb-1">
                         {achievement}
@@ -213,9 +213,9 @@ export function TeamPage() {
       <section className="py-16 bg-accent/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4">Industry Mentors</h2>
+            <h2 className="text-3xl md:text-4xl mb-4">Mentors de l'Industrie</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Get guidance from the builders of major Web3 protocols and companies
+              Obtenez des conseils des bâtisseurs des principaux protocoles et entreprises Web3
             </p>
           </div>
           
@@ -232,7 +232,7 @@ export function TeamPage() {
                   </div>
                   <CardTitle className="text-lg">{mentor.name}</CardTitle>
                   <CardDescription className="text-sm">
-                    {mentor.role} at {mentor.company}
+                    {mentor.role} chez {mentor.company}
                   </CardDescription>
                 </CardHeader>
                 
@@ -255,9 +255,9 @@ export function TeamPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4">Core Team</h2>
+            <h2 className="text-3xl md:text-4xl mb-4">Équipe Principale</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Experienced instructors and support staff dedicated to your success
+              Instructeurs expérimentés et personnel de soutien dédiés à votre succès
             </p>
           </div>
           
@@ -302,9 +302,9 @@ export function TeamPage() {
       {/* Join Team CTA */}
       <section className="py-16 bg-accent/10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl mb-4">Want to Join Our Team?</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">Vous Souhaitez Rejoindre Notre Équipe ?</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            We're always looking for talented individuals to help shape the next generation of Web3 builders.
+            Nous recherchons toujours des personnes talentueuses pour aider à façonner la prochaine génération de bâtisseurs Web3.
           </p>
           <Button size="lg" onClick={handleCTAClick}>
             Découvrir Plus
