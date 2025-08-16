@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web3 Hacker House - Build the Future of Web3</title>
+  <meta name="description" content="Join an exclusive 12-week immersive program where the brightest minds in blockchain come together to build revolutionary Web3 applications.">
+  <meta name="keywords" content="web3, blockchain, hacker house, programming, bootcamp, ethereum, defi, nft">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://web3hackerhouse.com">
+  <meta property="og:title" content="Web3 Hacker House - Build the Future of Web3">
+  <meta property="og:description" content="Join an exclusive 12-week immersive program where the brightest minds in blockchain come together to build revolutionary Web3 applications.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://web3hackerhouse.com">
+  <meta property="twitter:title" content="Web3 Hacker House - Build the Future of Web3">
+  <meta property="twitter:description" content="Join an exclusive 12-week immersive program where the brightest minds in blockchain come together to build revolutionary Web3 applications.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/globals.css">
+  
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    #root {
+      min-height: 100vh;
+    }
+    
+    /* Loading animation */
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 18px;
+      color: #666;
+    }
+    
+    .loading::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      border: 2px solid #f3f3f3;
+      border-top: 2px solid #333;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="loading">Loading Web3 Hacker House</div>
+  </div>
+
+  <!-- React and ReactDOM -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  
+  <!-- Babel for JSX transformation -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Your App -->
+  <script type="text/babel" data-type="module">
+    const { useState, useEffect } = React;
+    
+    // Import all your components here
+    const Hero = () => {
+      return React.createElement('section', {
+        className: 'relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-accent/20'
+      }, [
+        React.createElement('div', {
+          key: 'bg',
+          className: 'absolute inset-0 opacity-5',
+          style: {
+            backgroundImage: 'radial-gradient(circle, #000000 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }
+        }),
+        React.createElement('div', {
+          key: 'content',
+          className: 'container mx-auto px-4 text-center relative z-10'
+        }, [
+          React.createElement('div', {
+            key: 'badge',
+            className: 'mb-6 inline-flex items-center px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm'
+          }, '🚀 Applications Open Now'),
+          
+          React.createElement('h1', {
+            key: 'title',
+            className: 'text-4xl md:text-6xl lg:text-7xl mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent font-bold'
+          }, 'Build the Future of Web3'),
+          
+          React.createElement('p', {
+            key: 'description',
+            className: 'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed'
+          }, 'Join an exclusive 12-week immersive program where the brightest minds in blockchain come together to build revolutionary Web3 applications. Code, collaborate, and create the next generation of decentralized technology.'),
+          
+          React.createElement('div', {
+            key: 'buttons',
+            className: 'flex flex-col sm:flex-row gap-4 justify-center items-center mb-12'
+          }, [
+            React.createElement('button', {
+              key: 'apply',
+              className: 'px-8 py-3 text-lg bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium'
+            }, 'Apply Now'),
+            React.createElement('button', {
+              key: 'learn',
+              className: 'px-8 py-3 text-lg border border-border bg-transparent text-foreground rounded-lg hover:bg-accent transition-colors font-medium'
+            }, 'Learn More')
+          ]),
+          
+          React.createElement('div', {
+            key: 'stats',
+            className: 'grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto'
+          }, [
+            React.createElement('div', {
+              key: 'stat1',
+              className: 'text-center'
+            }, [
+              React.createElement('div', { key: 'icon1', className: 'text-3xl mb-2' }, '⚡'),
+              React.createElement('div', { key: 'number1', className: 'text-2xl font-semibold mb-1' }, '12 Weeks'),
+              React.createElement('div', { key: 'label1', className: 'text-muted-foreground' }, 'Intensive Program')
+            ]),
+            React.createElement('div', {
+              key: 'stat2',
+              className: 'text-center'
+            }, [
+              React.createElement('div', { key: 'icon2', className: 'text-3xl mb-2' }, '👥'),
+              React.createElement('div', { key: 'number2', className: 'text-2xl font-semibold mb-1' }, '50+ Builders'),
+              React.createElement('div', { key: 'label2', className: 'text-muted-foreground' }, 'Global Community')
+            ]),
+            React.createElement('div', {
+              key: 'stat3',
+              className: 'text-center'
+            }, [
+              React.createElement('div', { key: 'icon3', className: 'text-3xl mb-2' }, '💰'),
+              React.createElement('div', { key: 'number3', className: 'text-2xl font-semibold mb-1' }, '$100K+'),
+              React.createElement('div', { key: 'label3', className: 'text-muted-foreground' }, 'In Funding Available')
+            ])
+          ])
+        ])
+      ]);
+    };
+
+    const Features = () => {
+      const features = [
+        {
+          icon: "🏗️",
+          title: "Build Real Projects",
+          description: "Work on production-ready dApps, DeFi protocols, and NFT platforms that solve real-world problems."
+        },
+        {
+          icon: "🤝",
+          title: "Expert Mentorship",
+          description: "Learn from industry leaders, successful founders, and core contributors to major Web3 protocols."
+        },
+        {
+          icon: "🌐",
+          title: "Global Network",
+          description: "Connect with builders, investors, and innovators from the world's leading Web3 companies."
+        },
+        {
+          icon: "💡",
+          title: "Innovation Lab",
+          description: "Access cutting-edge tools, resources, and infrastructure to bring your ideas to life."
+        },
+        {
+          icon: "🚀",
+          title: "Demo Day",
+          description: "Pitch your projects to top VCs, accelerators, and Web3 companies for potential funding and partnerships."
+        },
+        {
+          icon: "🎯",
+          title: "Career Opportunities",
+          description: "Direct pathway to opportunities at leading Web3 companies and startups in our network."
+        }
+      ];
+
+      return React.createElement('section', {
+        className: 'py-20 bg-accent/10'
+      }, 
+        React.createElement('div', {
+          className: 'container mx-auto px-4'
+        }, [
+          React.createElement('div', {
+            key: 'header',
+            className: 'text-center mb-16'
+          }, [
+            React.createElement('h2', {
+              key: 'title',
+              className: 'text-3xl md:text-4xl lg:text-5xl mb-6 font-bold'
+            }, 'Why Choose Our Hacker House?'),
+            React.createElement('p', {
+              key: 'description',
+              className: 'text-lg text-muted-foreground max-w-2xl mx-auto'
+            }, 'We provide everything you need to accelerate your Web3 journey and build meaningful connections in the blockchain ecosystem.')
+          ]),
+          React.createElement('div', {
+            key: 'grid',
+            className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
+          }, features.map((feature, index) => 
+            React.createElement('div', {
+              key: index,
+              className: 'p-6 bg-card border border-border/50 rounded-lg hover:border-border transition-colors'
+            }, [
+              React.createElement('div', {
+                key: 'icon',
+                className: 'text-4xl mb-4'
+              }, feature.icon),
+              React.createElement('h3', {
+                key: 'title',
+                className: 'text-xl font-semibold mb-3'
+              }, feature.title),
+              React.createElement('p', {
+                key: 'description',
+                className: 'text-muted-foreground leading-relaxed'
+              }, feature.description)
+            ])
+          ))
+        ])
+      );
+    };
+
+    const Footer = () => {
+      return React.createElement('footer', {
+        className: 'bg-card border-t border-border py-12'
+      },
+        React.createElement('div', {
+          className: 'container mx-auto px-4'
+        }, [
+          React.createElement('div', {
+            key: 'content',
+            className: 'grid grid-cols-1 md:grid-cols-4 gap-8'
+          }, [
+            React.createElement('div', {
+              key: 'main',
+              className: 'col-span-1 md:col-span-2'
+            }, [
+              React.createElement('h3', {
+                key: 'title',
+                className: 'text-xl mb-4 font-semibold'
+              }, 'Web3 Hacker House'),
+              React.createElement('p', {
+                key: 'description',
+                className: 'text-muted-foreground mb-4 max-w-md'
+              }, 'Empowering the next generation of Web3 builders through immersive education, mentorship, and hands-on experience.'),
+              React.createElement('div', {
+                key: 'social',
+                className: 'flex space-x-4'
+              }, [
+                React.createElement('a', {
+                  key: 'twitter',
+                  href: '#',
+                  className: 'text-muted-foreground hover:text-foreground transition-colors'
+                }, 'Twitter'),
+                React.createElement('a', {
+                  key: 'discord',
+                  href: '#',
+                  className: 'text-muted-foreground hover:text-foreground transition-colors'
+                }, 'Discord'),
+                React.createElement('a', {
+                  key: 'github',
+                  href: '#',
+                  className: 'text-muted-foreground hover:text-foreground transition-colors'
+                }, 'GitHub')
+              ])
+            ]),
+            React.createElement('div', {
+              key: 'program'
+            }, [
+              React.createElement('h4', {
+                key: 'title',
+                className: 'mb-4 font-semibold'
+              }, 'Program'),
+              React.createElement('ul', {
+                key: 'list',
+                className: 'space-y-2 text-muted-foreground'
+              }, [
+                React.createElement('li', { key: 'curriculum' }, 
+                  React.createElement('a', {
+                    href: '#',
+                    className: 'hover:text-foreground transition-colors'
+                  }, 'Curriculum')
+                ),
+                React.createElement('li', { key: 'mentors' }, 
+                  React.createElement('a', {
+                    href: '#',
+                    className: 'hover:text-foreground transition-colors'
+                  }, 'Mentors')
+                ),
+                React.createElement('li', { key: 'alumni' }, 
+                  React.createElement('a', {
+                    href: '#',
+                    className: 'hover:text-foreground transition-colors'
+                  }, 'Alumni')
+                ),
+                React.createElement('li', { key: 'faq' }, 
+                  React.createElement('a', {
+                    href: '#',
+                    className: 'hover:text-foreground transition-colors'
+                  }, 'FAQ')
+                )
+              ])
+            ]),
+            React.createElement('div', {
+              key: 'contact'
+            }, [
+              React.createElement('h4', {
+                key: 'title',
+                className: 'mb-4 font-semibold'
+              }, 'Contact'),
+              React.createElement('ul', {
+                key: 'list',
+                className: 'space-y-2 text-muted-foreground'
+              }, [
+                React.createElement('li', { key: 'email' }, 'apply@web3hackerhouse.com'),
+                React.createElement('li', { key: 'location' }, 'San Francisco, CA'),
+                React.createElement('li', { key: 'phone' }, '+1 (555) 123-4567')
+              ])
+            ])
+          ]),
+          React.createElement('div', {
+            key: 'copyright',
+            className: 'border-t border-border mt-8 pt-8 text-center text-muted-foreground'
+          }, '© 2025 Web3 Hacker House. All rights reserved.')
+        ])
+      );
+    };
+
+    const App = () => {
+      return React.createElement('div', {
+        className: 'min-h-screen'
+      }, [
+        React.createElement(Hero, { key: 'hero' }),
+        React.createElement(Features, { key: 'features' }),
+        React.createElement(Footer, { key: 'footer' })
+      ]);
+    };
+
+    // Render the app
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(React.createElement(App));
+  </script>
+</body>
+</html>

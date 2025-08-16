@@ -1,0 +1,4 @@
+// Backup note: ProgrammesPage and PricingPage were removed as requested
+// These pages contained comprehensive content for Web3 programs and pricing
+// They can be restored from this backup if needed in the future
+// Files removed on: Current session
